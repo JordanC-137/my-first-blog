@@ -22,7 +22,8 @@ body {
 }
 
 .date {
-    color: rgb(102, 20, 139);
+    color: rgb(38, 20, 139);
+    font-size: 15pt;
 }
 
 .save {
