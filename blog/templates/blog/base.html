@@ -15,15 +15,14 @@
     </div>
     <div class="content container">
         <div class="row">
+            <div class = "footer">
+                <a href = "{% url 'CV' %}"><h2 class = "CV"> My CV</h2></a>
+            </div>
             <div class="col-md-8">
                 {% block content %}
                 {% endblock %}
             </div>
         </div>
-    </div>
-    <!--Trying to add CV-->
-    <div class = "footer">
-        <a href = "{% url 'CV' %}"><h2 class = "CV"> My CV</h2></a>
     </div>
 </body>
 </html>
