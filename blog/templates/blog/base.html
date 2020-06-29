@@ -12,13 +12,14 @@
         <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
     {% endif %}
     <!--<h1><a href="/">Jordan's Page</a></h1>-->
-    <h1><a href="{% url 'home' %}">Jordan's Page</a></h1>
+    <h1><a href="/">Jordan's Page</a></h1>
     </div>
     <div class="content container">
         <div class="row">
             <div class = "sidebar">
                 <a href = "{% url 'post_list' %}"><h2 class = "Sidebar-elements"> University Posts</h2></a>
-                <a href = "{% url 'personal_posts' %}"><h2 class = "Sidebar-elements"> Personal Posts</h2></a>
+                <!--<a href = "{% url 'personal_posts' %}"><h2 class = "Sidebar-elements"> Personal Posts</h2></a>-->
+                <a href = "#"><h2 class = "Sidebar-elements"> Personal Posts</h2></a>
                 <a href = "{% url 'CV' %}"><h2 class = "Sidebar-elements"> My CV</h2></a>
             </div>
             <div class="col-md-8">
