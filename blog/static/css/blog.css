@@ -50,12 +50,13 @@ body {
 }
 
 
-.footer {
+.sidebar {
     right: 0;
     position: absolute;
     padding: 20px 20px 40px 40px;
 }
 
-.CV-Headers {
+.Sidebar-elements {
     margin: 10px 0px 10px 0px;
+    color: firebrick;
 }

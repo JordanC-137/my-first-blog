@@ -22,7 +22,11 @@ def post_new(request):
     return render(request, 'blog/post_edit.html', {'form':form})
 
 def post_list(request):
-    posts = Post.objects.filter(published_date__lte = timezone.now()).order_by('published_date')
+    posts = Post.objects.filter(title__startswith = 'University').filter(published_date__lte = timezone.now()).order_by('published_date')
+    return render(request, 'blog/post_list.html', {'posts':posts})
+
+def personal_post_list(request):
+    posts = Post.objects.exclude(title__startswith = 'University').filter(published_date__lte = timezone.now()).order_by('published_date')
     return render(request, 'blog/post_list.html', {'posts':posts})
 
 def post_detail(request, pk):
@@ -45,3 +49,6 @@ def post_edit(request, pk):
 
 def cVAccess(request):
     return render(request, 'blog/CV.html', {})
+
+def homepage(request):
+    return render(request, 'blog/homepage.html', {})
